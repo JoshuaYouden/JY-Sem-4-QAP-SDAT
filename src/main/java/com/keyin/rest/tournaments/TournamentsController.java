@@ -26,10 +26,28 @@ public class TournamentsController {
     public List<Tournaments> searchTournaments(@RequestBody Tournaments tournaments) {
         List<Tournaments> results = new ArrayList<Tournaments>();
 
-        Tournaments tournament = tournamentsService.findTournamentByLocation(tournaments.getTournamentLocation());
+        if (tournaments.getTournamentLocation() != null) {
+            Tournaments tournament = tournamentsService.findTournamentByLocation(tournaments.getTournamentLocation());
 
-        if (tournament != null) {
-            results.add(tournament);
+            if (tournament != null) {
+                results.add(tournament);
+            }
+        }
+
+        if (tournaments.getTournamentStartDate() != null) {
+            Tournaments tournament = tournamentsService.findTournamentByStartDate(tournaments.getTournamentStartDate());
+
+            if (tournament != null) {
+                results.add(tournament);
+            }
+        }
+
+        if (tournaments.getParticipatingMembers() != null) {
+            Tournaments tournament = tournamentsService.findTournamentByParticipatingMembers(tournaments.getParticipatingMembers());
+
+            if (tournament != null) {
+                results.add(tournament);
+            }
         }
 
         return results;

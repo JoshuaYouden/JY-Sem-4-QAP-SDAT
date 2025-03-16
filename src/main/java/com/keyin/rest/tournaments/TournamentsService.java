@@ -6,6 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.keyin.rest.members.Members;
+
 @Service
 public class TournamentsService {
     @Autowired
@@ -23,6 +25,14 @@ public class TournamentsService {
 
     public Tournaments findTournamentByLocation(String tournamentLocation) {
         return tournamentsRepository.findByTournamentLocation(tournamentLocation);
+    }
+
+    public Tournaments findTournamentByStartDate(String tournamentStartDate) {
+        return tournamentsRepository.findByTournamentStartDate(tournamentStartDate);
+    }
+
+    public Tournaments findTournamentByParticipatingMembers(Members participatingMembers) {
+        return tournamentsRepository.findByParticipatingMembers(participatingMembers);
     }
 
     public Tournaments createTournament(Tournaments newTournament) {
