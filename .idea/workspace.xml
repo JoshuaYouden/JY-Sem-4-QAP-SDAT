@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23ecb7f6-45c7-4425-b485-a8b9b8f9e30c" name="Changes" comment="Added code and methods to files in members folder, added code to application.properties, pom.xml, and RestServiceApplication.">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/RestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/RestServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/Members.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/Members.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="23ecb7f6-45c7-4425-b485-a8b9b8f9e30c" name="Changes" comment="Added code to half of files in tournaments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/tournaments/TournamentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/tournaments/TournamentsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +14,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "JoshuaYouden"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JoshuaYouden/JY-Sem-4-QAP-SDAT.git",
+    "accountId": "e8c9f6d4-243f-4a5e-817b-04d1beeff5f9"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -40,7 +46,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/tournaments",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/Random Stuff/College Stuff/Project Assignments Due/Semester 4/SDAT"
@@ -55,10 +61,28 @@
       <option name="presentableId" value="Default" />
       <updated>1742134212765</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added code and methods to files in members folder, added code to application.properties, pom.xml, and RestServiceApplication.">
+      <option name="closed" value="true" />
+      <created>1742136376140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742136376140</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added code to half of files in tournaments">
+      <option name="closed" value="true" />
+      <created>1742137064307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742137064307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added code and methods to files in members folder, added code to application.properties, pom.xml, and RestServiceApplication." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code and methods to files in members folder, added code to application.properties, pom.xml, and RestServiceApplication." />
+    <MESSAGE value="Added code to half of files in tournaments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code to half of files in tournaments" />
   </component>
 </project>
