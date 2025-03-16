@@ -1,10 +1,15 @@
 package com.keyin.rest.tournaments;
 
+import java.util.List;
+
 import com.keyin.rest.members.Members;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.SequenceGenerator;
 
 @Entity
@@ -18,7 +23,14 @@ public class Tournaments {
     private String tournamentEndDate;
     private int tournamentEntryFee;
     private int tournamentCashPrize;
-    private Members participatingMembers;
+
+    @ManyToMany
+    @JoinTable(
+    name = "tournament_members",
+    joinColumns = @JoinColumn(name = "tournament_id"),
+    inverseJoinColumns = @JoinColumn(name = "member_id")
+    )
+    private List<Members> participatingMembers;
 
     public long getId() {
         return id;
@@ -68,11 +80,11 @@ public class Tournaments {
         this.tournamentCashPrize = tournamentCashPrize;
     }
 
-    public Members getParticipatingMembers() {
+    public List<Members> getParticipatingMembers() {
         return participatingMembers;
     }
 
-    public void setParticipatingMembers(Members participatingMembers) {
+    public void setParticipatingMembers(List<Members> participatingMembers) {
         this.participatingMembers = participatingMembers;
     }
 }
