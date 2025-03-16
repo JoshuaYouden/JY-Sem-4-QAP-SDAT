@@ -21,8 +21,20 @@ public class MembersService {
         return optionalMembers.orElse(null);
     }
 
-    public Members findByName(String memberName) {
-        return membersRepository.findByName(memberName);
+    public Members findByMemberName(String memberName) {
+        return membersRepository.findByMemberName(memberName);
+    }
+
+    public Members findByMemberEmail(String memberEmail) {
+        return membersRepository.findByMemberEmail(memberEmail);
+    }
+
+    public Members findByMemberPhoneNumber(String memberPhoneNumber) {
+        return membersRepository.findByMemberPhoneNumber(memberPhoneNumber);
+    }
+
+    public Members findByMemberStartDate(String memberStartDate) {
+        return membersRepository.findByMemberStartDate(memberStartDate);
     }
 
     public Members createMember(Members newMember) {
