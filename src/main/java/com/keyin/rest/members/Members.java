@@ -16,7 +16,7 @@ public class Members {
     private String memberEmail;
     private String memberPhoneNumber;
     private String memberStartDate;
-    private int membershipDuration;
+    private String membershipDuration;
 
     public long getId() {
         return id;
@@ -66,11 +66,11 @@ public class Members {
         this.memberStartDate = memberStartDate;
     }
 
-    public int getMembershipDuration() {
+    public String getMembershipDuration() {
         return membershipDuration;
     }
 
-    public void setMembershipDuration(int membershipDuration) {
+    public void setMembershipDuration(String membershipDuration) {
         this.membershipDuration = membershipDuration;
     }
 }

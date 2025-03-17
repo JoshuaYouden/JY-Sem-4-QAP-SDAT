@@ -72,4 +72,9 @@ public class TournamentsController {
     public Tournaments updateTournament(@PathVariable(value = "id") long id, @RequestBody Tournaments updatedTournament) {
         return tournamentsService.updateTournament(id, updatedTournament);
     }
+
+    @PutMapping("/tournaments/{tournamentId}/addMember/{memberId}")
+    public Tournaments addMemberToTournament(@PathVariable long tournamentId, @PathVariable long memberId) {
+        return tournamentsService.addMemberToTournament(tournamentId, memberId);
+    }
 }

@@ -10,5 +10,5 @@ public interface MembersRepository extends CrudRepository<Members, Long> {
     public Members findByMemberEmail(String memberEmail);
     public Members findByMemberPhoneNumber(String memberPhoneNumber);
     public Members findByMemberStartDate(String memberStartDate);
-    public Members findByMembershipDuration(int membershipDuration);
+    public Members findByMembershipDuration(String membershipDuration);
 }

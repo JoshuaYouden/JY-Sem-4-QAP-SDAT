@@ -1,0 +1,10 @@
+version: '3'
+services:
+  myapp-main:
+    image: sdat_qap:latest
+    ports:
+      - 8080:8080
+    environment:
+      - spring.datasource.url=jdbc:mysql://host.docker.internal:3306/qap_server
+      - spring.datasource.password=Keyin892!
+      - spring.datasource.username=root
