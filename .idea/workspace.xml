@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1baddd30-1a43-433c-a222-43445eac23eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="1baddd30-1a43-433c-a222-43445eac23eb" name="Changes" comment="Added docker support and fixed bugs/problems in code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/Members.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/Members.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/members/MembersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/rest/tournaments/TournamentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/rest/tournaments/TournamentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,20 @@
       <option name="presentableId" value="Default" />
       <updated>1742236422880</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added docker support and fixed bugs/problems in code">
+      <option name="closed" value="true" />
+      <created>1742239971746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742239971746</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added docker support and fixed bugs/problems in code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docker support and fixed bugs/problems in code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
