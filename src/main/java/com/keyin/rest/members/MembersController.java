@@ -4,7 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 @RequestMapping("/api")
 @RestController
 @CrossOrigin
@@ -26,12 +34,34 @@ public class MembersController {
     public List<Members> searchMembers(@RequestBody Members members) {
         List<Members> results = new ArrayList<Members>();
 
-        Members member = membersService.findByName(members.getMemberName());
-
-        if (member != null) {
-            results.add(member);
+        if (members.getMemberName() != null) {
+            Members member = membersService.findByMemberName(members.getMemberName());
+            if (member != null) {
+                results.add(member);
+            }
         }
-
+    
+        if (members.getMemberEmail() != null) {
+            Members member = membersService.findByMemberEmail(members.getMemberEmail());
+            if (member != null && !results.contains(member)) {
+                results.add(member);
+            }
+        }
+    
+        if (members.getMemberPhoneNumber() != null) {
+            Members member = membersService.findByMemberPhoneNumber(members.getMemberPhoneNumber());
+            if (member != null && !results.contains(member)) {
+                results.add(member);
+            }
+        }
+    
+        if (members.getMemberStartDate() != null) {
+            Members member = membersService.findByMemberStartDate(members.getMemberStartDate());
+            if (member != null && !results.contains(member)) {
+                results.add(member);
+            }
+        }
+    
         return results;
     }
 
