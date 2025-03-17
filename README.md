@@ -113,5 +113,3 @@ docker-compose down
 ---
 
 # Thank you for using my project!
-
-#
